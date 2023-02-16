@@ -1,12 +1,12 @@
 import java.sql.*;
 
 public class Iter0 {
-    //testing push
+    // heres another comment
     public static void main(String[] args) {
         String url
             = "jdbc:mysql://localhost:3306/exam"; // table details
         String username = "root"; // MySQL credentials
-        String password = "*";
+        String password = "Cams6487!3";
         String query
             = "select *from branch"; // query to be run // Driver name
         try {
