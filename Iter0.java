@@ -9,6 +9,8 @@ public class Iter0 {
         String password = "Cams6487!3";
         String query
             = "select *from branch"; // query to be run // Driver name
+        String queryinsert
+            = "INSERT INTO branch VALUES (6, 'University of Iowa', 'Iowa City')";
         try {
             Connection con = DriverManager.getConnection(
                 url, username, password);
@@ -19,6 +21,7 @@ public class Iter0 {
                 rs.next();
                 String name
                     = rs.getString("City"); // Retrieve name from db
+                st.executeUpdate(queryinsert);
          
                 System.out.println(name); // Print result on console
                 st.close(); // close statement
